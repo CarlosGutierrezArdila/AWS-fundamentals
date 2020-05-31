@@ -14,3 +14,19 @@ Six Advantages and Benefits of Cloud Computing
 - region: geographically located resources (storage, compute, laws etc)
 - availability zones: guarantee highly available services
 
+# Compute services in AWS
+
+## EC2
+- elastic compute cloud: servers on demand
+- AMI: amazon machine image
+- tags: actegorize EC2 instance
+- security group
+- **EC2 Instance types:**
+    - General purpose: balanced, use cases as web servers or code repositories A1, T3, T3a, T2, M6g, M5, M5a, M5n, M4
+    - Compute optimized: for applications that benefit from high performance processors, HPC, gaming servers, ad server engines, machine learning inference C%, C5n, C4
+    - memory optimized: apps that process large datasets in memory, high performance DB, big data analytics, R5, R5a, R5n, R4, X13, X1, high memory, Z1D
+    - Accelerated Computing: use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs. speech recognition, autonomous vehicles, P3 , P2, inF1, G4, G3, F1
+    - Storage Optimized:  that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latency, random I/O operations per second, NoSQL DB, in-menmory DB, data warehousing I3, I3en, D2, H1
+- Fixed ( eg M5, C5, R5) and burstable performance (T).
+- **Lightsail:** offers environments eg. for wordpress sites, node servers, containers etc
+
