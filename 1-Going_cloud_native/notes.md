@@ -29,4 +29,20 @@ Six Advantages and Benefits of Cloud Computing
     - Storage Optimized:  that require high, sequential read and write access to very large data sets on local storage. They are optimized to deliver tens of thousands of low-latency, random I/O operations per second, NoSQL DB, in-menmory DB, data warehousing I3, I3en, D2, H1
 - Fixed ( eg M5, C5, R5) and burstable performance (T).
 - **Lightsail:** offers environments eg. for wordpress sites, node servers, containers etc
+# Networking and storage
+## VPC
+- Define a net where the applicatiosn run, we can define subnets.
+- Define private IPs 10.10.0.0/16
+- Define IGW (internet gateway) to communicate the vpc / VGW to access pricate subnets
+- Create a route table add 0.0.0.0/0 (internet) and associate to the subnet
+- Databases should go in private subnets
+- We can create replicate subnets in other availability zone for high availability
+- VPC are multi AZ structures
+- ELB: elastic load balancer
+- Classless Inter-Domain Routing: CIDR network addresses are allocated in a virtual private cloud (VPC) and in a subnet by using CIDR notation. A /16 block provides 65,536 IPv4 addresses. A /24 block provides 256 addresses.
+
+# Storage
+- S3: Object level storage
+- RDS: Block storage 
+- EBS (elastic block storage) : define volumes to attach to EC2 machines
 
