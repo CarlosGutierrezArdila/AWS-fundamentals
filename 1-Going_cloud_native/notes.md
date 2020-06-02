@@ -44,5 +44,27 @@ Six Advantages and Benefits of Cloud Computing
 # Storage
 - S3: Object level storage
 - RDS: Block storage 
+## EBS
 - EBS (elastic block storage) : define volumes to attach to EC2 machines
+## S3
+- simple storage service, object storage (images or text, media, backups)
+- Buckets: have an url accesible over http or https, object private by default
+- objects can be up to 5TB
+- control permission over the bucket and select region to optimize
+## Amazon Elastic File System (Amazon EFS)
+- Regionally distributed, can attach to n EC2 instances simultaneously
+# Databases
+## RDS
+- have a VPC and subnet created
+- choose the DB engine (amazon aurora, postgres, mysql, mariadb, oracle, microsoft sql server)
+- use case: production(multi AZ) or dev/test
+- AWS DMS migration service
+## Dynamo DB
+- Create a table
+- single-digit millisecond latency at any scale
+- document and key-value storage models
+
+
+
+
 
