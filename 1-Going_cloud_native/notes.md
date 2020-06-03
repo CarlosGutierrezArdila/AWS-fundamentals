@@ -77,6 +77,16 @@ Six Advantages and Benefits of Cloud Computing
 - Create an auto scaling group
     - configure AMI and configuration 
     - configure scaling policies with cloudwatch metrics
+# Security and Cost Management
+## Security
+- Hypervisor, network, and physical layers are AWS responsibility, things as Guest OS, Application and User Data is user responsibility on EC2
+- RDS, user only have to worry about user data
+## Cost management
+- AWS cost explorer: reports
+- AWS budgets: alerts and threesholds for cost
+- AWS trusted advisor: tool to identify areas to optimize (cost, performance, security, fault tolerance, service limits) 
+
+
 
 
 
