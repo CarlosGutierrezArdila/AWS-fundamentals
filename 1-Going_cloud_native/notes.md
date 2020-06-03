@@ -63,6 +63,21 @@ Six Advantages and Benefits of Cloud Computing
 - Create a table
 - single-digit millisecond latency at any scale
 - document and key-value storage models
+# Monitoring applications
+## cloudwatch
+- Collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your AWS resources.
+- Events: set rules, respond to changes in aws resources and route the to functions
+- Logs metrics: collect logs metric by installing cloudwatch agent on the server
+## load balancing
+- ELB: regional in the VPC, automatic trafic to the instances
+    - application lb: request level (layer 7) routing trafic to EC" instances, microservices and containers, based on content of request, ideal fot HTTP/HTTPS traffic advanced lb
+    - Network LB: layer 4, connection level, routes based on IP protocol data, ideal for TCP traffic
+    -  Classic LB: basic lb across ec2 instances, request and connection level
+## Auto scaling
+- Create an auto scaling group
+    - configure AMI and configuration 
+    - configure scaling policies with cloudwatch metrics
+
 
 
 
