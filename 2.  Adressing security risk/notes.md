@@ -33,4 +33,30 @@
 - Amazon Cloud Directory: establish directories with different hierarchies in multiple dimensions.
  # Directory services
  - Amazon cognito: user portal to manage users
+ # Network isolation VPC
+ - Public subnets can connect to internet (NACLs)
+ - Security groups act as firewalls for EC" instances controlling traffic at instance level
+ # VPC endpoints and private links
+ - private link: traffic between AWS but not through the internet
+ - route tables: set of rules, where network traffic is directed
+ - Each subment must be associated to a route table, only one, but a route table can have n subnets 
+ - **AWS Direct Connect:** service to connect on-premise resources to AWS, establish a dedicated network connection between user network and aws
+ # Detective Controls
+ -  auditing, automated analysis, and alarming
+ # Auditing: 
+ - AWS Cloudtrail: who is doing what
+ - AWS config: record configurations and changes to it
+ - Amazon inspector: automated security assesments:
+    - Network configuration reachability
+    - Amazon agent
+    - Security assessment service
+- AWS trusted advisor: report with recomendations
+# Monitoring CloudWatch and CloudWatch logs
+- Retrieve metrics from resources, set alarms, logs
+# Monitoring Guard Duty and Security Hub
+- GuardDuty: threat detection srvice that monitor for malicious or unauthorized behaviors
+    - low, medium and high severity levels
+    - HTTPS APIs, cloudwatch events: trigger events and functions to respond 
+- AWS Security Hub: centralize AWS GD, A. Inspector, Amazon Macie and AWS Partner Solutions
+
 
