@@ -58,5 +58,30 @@
     - low, medium and high severity levels
     - HTTPS APIs, cloudwatch events: trigger events and functions to respond 
 - AWS Security Hub: centralize AWS GD, A. Inspector, Amazon Macie and AWS Partner Solutions
+# Data types
+- prevent accidential CRUD
+- **Data type       |   AWS service**
+- Object:               S3 /S3 glacier
+- Database:             RDS, timestream, Quantum ledger database, neptune
+- EC2 data:             EBS, EFS
+- Data warehouse:       Redshift, Athena
+- Data lake:            Lake formation
+- Data transfer:        Snowball, Snowmobile
+
+- Amazon aurora MySQL 5x more performant, Postgres 3x more performant
+# Encryption in transit
+- define requirements for data protection in transit
+- Apply encryption
+- Authenticate network communication
+- IPSec: protect data on layer 3
+- TLS ans SSL 
+- ACM aws certificate manager 
+# Encryption at rest
+- KMS: key manage service
+- CMK customer master keys
+- cloudHSM hardware security management
+
+
+
 
 
