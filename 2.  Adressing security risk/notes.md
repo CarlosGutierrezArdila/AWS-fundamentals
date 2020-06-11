@@ -80,6 +80,22 @@
 - KMS: key manage service
 - CMK customer master keys
 - cloudHSM hardware security management
+# Database Encryption
+- inside VPC: load balancer and web server in public subnet, internal load balancer and app server in private subnet
+- RDS: underlying storage is encrypted, as are its automated backups, read replicas, and snapshots.
+- SSL for data in transit
+- Encrypt with AES256 when creating RDS instance, KMS used to manage encryption key
+- DynamoDB is encrypted by default
+# Amazon s3
+- Bucket policies IAM policy
+- Enable default encryption
+- server side encryption with Amazon S3 managed SSE-S3 or KMS-managed SSE-KMS
+- Macie uses machine learning to discover sensitive data to encrypt
+- When you use server-side encryption, Amazon S3 encrypts an object before saving it to disk and decrypts it when you download the objects
+# EBS encryption
+- set encryption by default for new EBS volumes and snapshots
+
+
 
 
 
