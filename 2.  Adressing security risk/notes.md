@@ -35,11 +35,11 @@
  - Amazon cognito: user portal to manage users
  # Network isolation VPC
  - Public subnets can connect to internet (NACLs)
- - Security groups act as firewalls for EC" instances controlling traffic at instance level
+ - Security groups act as firewalls for EC2 instances controlling traffic at instance level
  # VPC endpoints and private links
  - private link: traffic between AWS but not through the internet
  - route tables: set of rules, where network traffic is directed
- - Each subment must be associated to a route table, only one, but a route table can have n subnets 
+ - Each subnet must be associated to a route table, only one, but a route table can have n subnets 
  - **AWS Direct Connect:** service to connect on-premise resources to AWS, establish a dedicated network connection between user network and aws
  # Detective Controls
  -  auditing, automated analysis, and alarming
@@ -94,6 +94,38 @@
 - When you use server-side encryption, Amazon S3 encrypts an object before saving it to disk and decrypts it when you download the objects
 # EBS encryption
 - set encryption by default for new EBS volumes and snapshots
+# Protecting Compute Resources
+## EC2
+- User: Operating System / Identity management system that provides access
+- AWS: Hypervisor / EC2 instance isolation
+- Restrict access at Network and OS level
+- Control API access with IAM roles
+## Containers
+- Docker: AWS elastic container service ECS, elastic kubernetes service EKS, Fargate, Elastic Beanstalk
+## AWS Lambda
+- AWS: infrastructure, OS, App platform
+- User: security of the code
+- Storage and accesibility of sensitive data
+- IAM to lambda service withn function
+# Securing Endpoints
+- Application loas balancer (single requests) layer 7
+- Network Load Balancer layer 4
+- API Gateway: expose REST or other services
+    - AWS Signature Version 4 (sigV4)
+    - Lambda authorizor (JWT, OAUTH)
+# Securing secrets
+- AWS Secrets Manager: handle access to secrets without storing on any instance, server or container
+# Well architected tool
+pilars:
+- Security
+- Reliability
+- Performance efficiency
+- Cost Optimization
+- Operational Excellence
+
+
+
+
 
 
 
