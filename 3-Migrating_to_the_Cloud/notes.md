@@ -19,5 +19,26 @@
 # Cloud Adoption Framework
 - Build an approach to cloud from organization
 - Business and people perspective, governance, technical perspective, security , operation
+# Scaling Considerations
+- Scaling constraints:
+    - not every server can scale, use off-server session storage or other resources, remove unnecesary load from nos-scalable servers
+- Horizontal scaling: add resources to add capability and distrubite load between
+- Vertical scaling: make the resources more capable of responding to more requests
+# High availability
+- designing for the highest levels of uptime
+- avoid single points of failure
+- distribute traffic between various nodes
+# Considerations with migrating DB vs applications
+- Consider schema, model and engine changes
+- Planning human resources for migration
+- planning times
+# AWS Server Migration Services
+- only available for migrating VMware, vSphere, Microsoft Hyper V and Azure virtual machines
+- Replicate server as AMIs available for deploying in EC2
+- Set alarms with Cloudwatch and Cloudtrail
+
+
+
+
 
 
