@@ -36,6 +36,20 @@
 - only available for migrating VMware, vSphere, Microsoft Hyper V and Azure virtual machines
 - Replicate server as AMIs available for deploying in EC2
 - Set alarms with Cloudwatch and Cloudtrail
+# VM import VM on AWS
+- VM import: import machines from premises from AWS as EC2 images
+- AWS server migration SMS automates the process of importing
+# AWS migration hub
+- chose the tools that best fit your needs
+- see metrics and progress
+# AWS application discovery
+- 2 ways: agentless and agent based, identify info about servers
+- utilization metrics to decide sizes from AWS services
+- agent based: install aWs agent in every resource in premises
+- integrated with migration hub
+- create cost optimized migration plan
+
+
 
 
 
